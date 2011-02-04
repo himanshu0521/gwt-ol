@@ -1,5 +1,0 @@
-Changed the showcase example for ComparisonFilter.
-If you use the fitler as a strategy then the filtering is done on the client side.
-If the filter is used on the vector layer options then the filtering is sent in the WFS request so processing is done on the server side.
-My use case prefers the processing to be done on the server side.
-

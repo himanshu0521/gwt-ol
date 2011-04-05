@@ -63,6 +63,10 @@ class SelectFeatureImpl {
 		return callback;
 	}-*/;
 
+	public static native void select(JSObject selectFeature, JSObject feature)/*-{
+    	selectFeature.select(feature);
+	}-*/;
+
 	public static native void unselect(JSObject selectFeature, JSObject feature)/*-{
     	selectFeature.unselect(feature);
 	}-*/;

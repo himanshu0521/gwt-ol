@@ -205,4 +205,11 @@ public class SelectFeature extends Control {
 		});
 	}
 
+	public void select(VectorFeature feature) {
+		SelectFeatureImpl.select(getJSObject(), feature.getJSObject());	
+	}
+
+	public void unselect(VectorFeature feature) {
+		SelectFeatureImpl.unselect(getJSObject(), feature.getJSObject());	
+	}
 }

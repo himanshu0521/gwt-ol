@@ -31,4 +31,7 @@ public class MultiPolygon extends Collection {
         return components;
     }
     
+    public boolean intersects(Geometry geometry) {
+        return MultiPolygonImpl.intersects(this.getJSObject(), geometry.getJSObject());
+    }
 }

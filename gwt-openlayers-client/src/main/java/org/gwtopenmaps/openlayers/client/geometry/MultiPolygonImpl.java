@@ -8,4 +8,7 @@ public class MultiPolygonImpl {
     	return new $wnd.OpenLayers.Geometry.MultiPolygon($wnd.gwt_openlayers_util.convertToArray(polygons));
 	}-*/;
 
+    public static native boolean intersects(JSObject self, JSObject other)/*-{
+        return self.intersects(other);
+    }-*/;
 }

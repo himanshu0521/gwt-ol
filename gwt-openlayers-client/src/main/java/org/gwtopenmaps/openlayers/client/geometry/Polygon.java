@@ -37,4 +37,8 @@ public class Polygon extends Collection {
         }
         return components;
     }
+
+    public boolean intersects(Geometry geometry) {
+        return PolygonImpl.intersects(this.getJSObject(), geometry.getJSObject());
+    }
 }

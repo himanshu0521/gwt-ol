@@ -11,4 +11,8 @@ public class CollectionImpl {
     public native static JSObject getComponent(JSObject self, int index)/*-{
         return self.components[index];
     }-*/;
+
+    public native static boolean intersects(JSObject self, JSObject other)/*-{
+        return self.intersects(other);
+    }-*/;
 }

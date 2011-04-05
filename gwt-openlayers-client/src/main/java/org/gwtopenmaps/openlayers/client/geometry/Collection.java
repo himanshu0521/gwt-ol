@@ -27,5 +27,8 @@ public abstract class Collection extends Geometry{
     public JSObject getComponent(int index){
         return CollectionImpl.getComponent(getJSObject(), index);
     }
-
+    
+    public boolean intersects(Geometry geometry) {
+        return CollectionImpl.intersects(getJSObject(), geometry.getJSObject());
+    }
 }
